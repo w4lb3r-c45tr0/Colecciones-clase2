@@ -17,8 +17,7 @@ public class ControlAsistencia {
 	private final Set<String> carnetsPresentes = new HashSet<>();
 
 	public boolean registrarAsistencia(String carnet) {
-		// TODO: reemplazar esta línea por carnetsPresentes.add(carnet).
-		throw new UnsupportedOperationException("TODO: completar registrarAsistencia() en ControlAsistencia");
+		return carnetsPresentes.add(carnet);
 	}
 
 	public int totalPresentes() {

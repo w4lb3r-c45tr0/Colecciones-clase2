@@ -46,26 +46,9 @@ public class CatalogoProductos {
 		return productos;
 	}
 
-	/**
-	 * TODO (estudiante): completar para la siguiente clase.
-	 * <p>
-	 * Enunciado: recorrer productos (el ArrayList) y devolver solo los que
-	 * tengan la categoría indicada.
-	 * <p>
-	 * Entrada de ejemplo: buscarPorCategoria("Bebidas") con el catálogo del
-	 * laboratorio (ver DemoCatalogoProductos).
-	 * Salida esperada: una lista con únicamente los productos de esa categoría.
-	 * <p>
-	 * Pista: usa un for-each sobre productos y agrega a una lista nueva los
-	 * que cumplan producto.getCategoria().equals(categoria).
-	 * <p>
-	 * Criterios de evaluación:
-	 * - No modifica la lista productos original.
-	 * - Compara categorías con equals(), nunca con ==.
-	 * - Si no hay coincidencias, retorna una lista vacía (no null).
-	 */
+	
 	public List<Producto> buscarPorCategoria(String categoria) {
-		// TODO: reemplazar esta línea por la lógica descrita arriba.
+		
 		List<Producto> resultado = new ArrayList<>();
 		
 		for (Producto producto : productos) {
