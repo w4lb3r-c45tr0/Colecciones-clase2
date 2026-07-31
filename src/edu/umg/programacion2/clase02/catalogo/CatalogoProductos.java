@@ -66,6 +66,14 @@ public class CatalogoProductos {
 	 */
 	public List<Producto> buscarPorCategoria(String categoria) {
 		// TODO: reemplazar esta línea por la lógica descrita arriba.
-		throw new UnsupportedOperationException("TODO: completar buscarPorCategoria() en CatalogoProductos");
+		List<Producto> resultado = new ArrayList<>();
+		
+		for (Producto producto : productos) {
+			
+			if (producto.getCategoria().equals(categoria)) {
+				resultado.add(producto);
+				}
+			}
+		return resultado;
 	}
 }
